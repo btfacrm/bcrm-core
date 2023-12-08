@@ -20,7 +20,7 @@
 		<!-- Exchange documentation -->
 		<fields key="sourceCode">https://github.com/jpontdia/common-core</fields>
 		<categories key="Asset type">Common</categories>
-		<tags>Common, Salesforce, OpenTelemetry, Snowflake, SQLServer, Email</tags>
+		<tags>Common, Salesforce, SQLServer, Email</tags>
 	</properties>
 
 	<build>
