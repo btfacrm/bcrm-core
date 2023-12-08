@@ -31,7 +31,7 @@
 			
 			<salesforce:salesforce-query ><![CDATA[
 				SELECT Id 
-				FROM Contact 
+				FROM Customer__c 
 				WHERE Id ='a018b00000z9s56AAA'
 			]]>
  			</salesforce:salesforce-query>
