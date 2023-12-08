@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" 
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" 
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" 
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" 
+	xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools" 
+	xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core
+		http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit
+		http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools
+		http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd
+		http://www.mulesoft.org/schema/mule/salesforce
+		http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+		http://www.mulesoft.org/schema/mule/http
+		http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+
+	<munit:config name="test-salesforce-connector-configuration"/>
+
+	<munit:dynamic-port propertyName="http.port"/>
+
+    <http:request-config name="http_test_local_configuration">
+        <http:request-connection host="0.0.0.0" port="${http.port}" />
+    </http:request-config>
+	
+	<munit:test name="test-salesforce-connector">
+
+		<munit:enable-flow-sources>
+			<munit:enable-flow-source value="test-salesforce-endopoint"/>
+		</munit:enable-flow-sources>
+		
+		<munit:execution>
+			<logger doc:name="start" level="INFO" message="Test Salesforce Connector"/>
+				
+			<http:request 
+				config-ref="http_test_local_configuration" 
+				doc:name="Request" 
+				method="GET" 
+				outputMimeType="application/json" 
+				path="/testsalesforce">
+				<http:response-validator>
+					<http:success-status-code-validator values="200" />
+				</http:response-validator>
+			</http:request>
+		</munit:execution>
+		
+	</munit:test>
+
+</mule>

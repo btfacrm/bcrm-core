@@ -1,0 +1,63 @@
+# Default environment
+env: local
+
+# Java Keystore for SSL and TLS-Context
+jks:
+  keypassword: 'myKeypassword'
+  path: 'myJksPath'
+
+# Listening port of the serivce
+httpprotocol: "HTTPS"
+http:
+  port: "8081"
+https:
+  port: "8082"
+  
+# Salesfoce Connection
+salesforce:
+  consumerkey: "my-consumer-key"
+  keystore: "my-keystore.jks"
+  storepassword: "the-kystore-password"
+  certificatealias: "the-certificate-inside-keystore"
+  principal: "user-in-salesforce"
+  tokenendpoint: "salesforce-token-endpoint"
+  audienceurl: "https://test.salesforce.com-(sandbox)"
+  
+# OpenTelemtry configuration
+otel:
+  collectorendpoint: "http://localhost:4317"
+  servicename: "myservice"
+
+# Logging - logz.io
+logzio.token: "MyToken"
+logzio.url: "MyUrl"
+
+# Email
+email:
+  host: 'outlook.office365.com'
+  port: '587'
+  user: 'myUser'
+  pass: 'myPass'
+
+# SQL Server
+mssql:
+  host: 'myHost'
+  user: 'myUser'
+  pass: 'myPAss'
+  name: 'master'
+
+# Service messages
+messages:
+  backend-error: "There was a problem while trying to access the backend repository"
+  apikit-400: "Bad request"
+  apikit-404: "Resource not found"
+  apikit-405: "Method not allowed"
+  apikit-406: "Not acceptable"
+  apikit-415: "Unsupported media type"
+  apikit-501: "Not Implemented"
+  one-query-filter: "At least one query filter must be sent other than maxRecords or pagination parameters"
+  record-delete-success: "The record was deleted successfully"
+  record-delete-error: "The record cannot be deleted; it doesn´t exist or has relationships with other resources"
+  record-create-success: "The record was created successfully"
+  record-create-error: "There was a problem while creating the record"
+  record-exists: "The record already exists"
