@@ -36,6 +36,7 @@
 			]]>
  			</salesforce:salesforce-query>
 		</salesforce:query>
+		
 		<logger doc:name="show payload"
 			level="INFO" 
 			message="#[output application/json --- if ( payload != null) payload else 'No records found']"/>
