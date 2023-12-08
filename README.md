@@ -1,9 +1,9 @@
 # Common configurations for Mulesoft services
 ![Powered by](https://img.shields.io/badge/Powered%20by-Mulesoft-535597.svg)
-  ![Unit test](https://gist.githubusercontent.com/jpontdia/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-btfacrmcore-ut.svg)
-  ![Code coverage](https://gist.githubusercontent.com/jpontdia/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-btfacrmcore-cc.svg)
+  ![Unit test](https://gist.githubusercontent.com/jpontdia/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-btfacore-ut.svg)
+  ![Code coverage](https://gist.githubusercontent.com/jpontdia/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-btfacore-cc.svg)
   ![Build](https://github.com/btfacrm/common-btfacore/actions/workflows/build.yml/badge.svg)
-  ![Build job](https://gist.githubusercontent.com/jpontdia/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-btfacrmcore-wf.svg)
+  ![Build job](https://gist.githubusercontent.com/jpontdia/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-btfacore-wf.svg)
 <br>
 
 Shared Mule library that provides reusable flows, resources and configuration settings common for all applications.
