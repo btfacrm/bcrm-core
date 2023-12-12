@@ -18,10 +18,10 @@
 		doc:name="Database Config"
 		doc:description="This is used to connect to the on-prem Microsoft SQL Server">
 		<db:mssql-connection 
-			host="${mssql.prd.host}"
-			user="${mssql.prd.user}"
-			password='${mssql.prd.pass}'
-			databaseName="${mssql.prd.name}" />
+			host="${mssql.host}"
+			user="${mssql.user}"
+			password='${mssql.pass}'
+			databaseName="${mssql.name}" />
 	</db:config>
 
 </mule>
