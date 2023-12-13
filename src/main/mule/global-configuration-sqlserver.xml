@@ -20,8 +20,8 @@
 		<db:mssql-connection 
 			host="${mssql.host}"
 			user="${mssql.user}"
-			password='${mssql.pass}'
-			databaseName="${mssql.name}" />
+			password='${mssql.password}'
+			databaseName="${mssql.database}" />
 	</db:config>
 
 </mule>

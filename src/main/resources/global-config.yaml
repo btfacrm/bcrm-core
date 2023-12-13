@@ -37,14 +37,14 @@ email:
   host: 'outlook.office365.com'
   port: '587'
   user: 'myUser'
-  pass: 'myPass'
+  password: 'myPass'
 
 # SQL Server
 mssql:
   host: 'myHost'
   user: 'myUser'
-  pass: 'myPAss'
-  name: 'master'
+  password: 'myPAss'
+  database: 'master'
 
 # Service messages
 messages:
