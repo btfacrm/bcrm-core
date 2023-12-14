@@ -43,6 +43,7 @@ email:
 mssql:
   host: 'myHost'
   user: 'myUser'
+  port: '1433'
   password: 'myPAss'
   database: 'master'
 

@@ -14,14 +14,14 @@
 	<configuration-properties doc:name="Configuration properties"
 		file="global-config.yaml" />
 	
-	<db:config name="MSSQL_Server_Config"
+	<db:config name="Database_Config"
 		doc:name="Database Config"
-		doc:description="This is used to connect to the on-prem Microsoft SQL Server">
+		doc:description="This is used to connect to the Microsoft SQL Server">
 		<db:mssql-connection 
 			host="${mssql.host}"
+			port="${mssql.port}"
 			user="${mssql.user}"
 			password='${mssql.password}'
 			databaseName="${mssql.database}" />
 	</db:config>
-
 </mule>
