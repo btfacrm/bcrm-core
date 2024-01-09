@@ -30,7 +30,7 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
-					<classifier>mule-application</classifier>
+					<classifier>mule-plugin</classifier>
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>com.microsoft.sqlserver</groupId>
