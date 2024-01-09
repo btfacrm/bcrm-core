@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>078efef1-d139-48ed-92f5-f8d4a0592374</groupId>
 		<artifactId>common-pom</artifactId>
-		<version>1.0.1</version>  
+		<version>1.0.1</version>
 		<relativePath/>
 	</parent>
 
 	<groupId>078efef1-d139-48ed-92f5-f8d4a0592374</groupId>
 	<artifactId>common-btfacore</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>mule-application</packaging>
 	<name>common-btfacore</name>
 	<description>Shared Mule library that provides reusable flows, resources and configuration settings common for all applications</description>
@@ -30,7 +30,7 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
-					<classifier>mule-plugin</classifier>
+					<classifier>mule-application</classifier>
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>com.microsoft.sqlserver</groupId>
@@ -77,7 +77,6 @@
 		</dependency>
 
 	</dependencies>
-	
 	<!--Repository to get the artifacts for your Anypoint organization -->
 	<repositories>
 		<repository>
