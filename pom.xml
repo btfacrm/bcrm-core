@@ -3,22 +3,22 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>078efef1-d139-48ed-92f5-f8d4a0592374</groupId>
+		<groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
 		<artifactId>common-pom</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.5</version>
 		<relativePath/>
 	</parent>
 
-	<groupId>078efef1-d139-48ed-92f5-f8d4a0592374</groupId>
+	<groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
 	<artifactId>common-btfacore</artifactId>
-	<version>1.0.6</version>
+	<version>1.0.8</version>
 	<packaging>mule-application</packaging>
 	<name>common-btfacore</name>
 	<description>Shared Mule library that provides reusable flows, resources and configuration settings common for all applications</description>
 
 	<properties>
 		<!-- Exchange documentation -->
-		<fields key="sourceCode">https://github.com/jpontdia/common-core</fields>
+		<fields key="sourceCode">https://github.com/btfacrm/common-btfacore</fields>
 		<categories key="Asset type">Common</categories>
 		<tags>Common, Salesforce, SQLServer, Email</tags>
 	</properties>
@@ -82,7 +82,7 @@
 		<repository>
 			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange V3</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+			<url>https://maven.gov.anypoint.mulesoft.com/api/v2/organizations/${project.groupId}/maven</url>
 			<layout>default</layout>
 		</repository>
 	</repositories>
