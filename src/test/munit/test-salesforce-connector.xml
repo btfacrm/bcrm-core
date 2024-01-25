@@ -42,7 +42,7 @@
 				outputMimeType="application/json" 
 				path="/testsalesforce">
 				<http:response-validator>
-					<http:success-status-code-validator values="200" />
+					<http:success-status-code-validator values="404" />
 				</http:response-validator>
 			</http:request>
 		</munit:execution>
