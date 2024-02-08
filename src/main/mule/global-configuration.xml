@@ -2,30 +2,12 @@
 
 <mule 
 	xmlns:open-telemetry="http://www.mulesoft.org/schema/mule/open-telemetry"
-	xmlns:email="http://www.mulesoft.org/schema/mule/email"
 	xmlns="http://www.mulesoft.org/schema/mule/core"
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="
 		http://www.mulesoft.org/schema/mule/core 
-		http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-		http://www.mulesoft.org/schema/mule/email 
-		http://www.mulesoft.org/schema/mule/email/current/mule-email.xsd">
+		http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
 	
-	<configuration-properties doc:name="Configuration properties"
-		file="global-config.yaml" />
-	
-	<email:smtp-config name="Email_SMTP_Config"
-		doc:name="Email SMTP" 
-		from="${email.user}">
-		<email:smtp-connection host="${email.host}"
-			port="${email.port}"
-			user="${email.user}" 
-			password="${email.password}">
-			<email:properties>
-				<email:property key="mail.smtp.starttls.enable"
-					value="true" />
-			</email:properties>
-		</email:smtp-connection>
-	</email:smtp-config>
+	<configuration-properties file="global-config.yaml" />
 </mule>
