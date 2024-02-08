@@ -7,7 +7,7 @@ jks:
   path: 'myJksPath'
 
 # Listening port of the serivce
-httpprotocol: "HTTPS"
+httpprotocol: "HTTP"
 httpsprotocol: "HTTPS"
 http:
   port: "8081"
@@ -50,7 +50,6 @@ mssql:
 
 # Service messages
 messages:
-
   # API
   apikit-400: "Bad request"
   apikit-404: "Resource not found"
@@ -64,11 +63,9 @@ messages:
   record-create-success: "The record was created successfully"
   record-create-error: "There was a problem while creating the record"
   record-exists: "The record already exists"
-
   # Batch processing
   batch-stillrunning: "The batch process is still running"
   batch-success: "The records were created or updated successfully"
   batch-error: "There was a problem while proccessing the batch"
-
   # General
   backend-error: "There was a problem while trying to access the backend repository"
