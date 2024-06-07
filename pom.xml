@@ -4,16 +4,16 @@
 
 	<parent>
 		<groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
-		<artifactId>common-pom</artifactId>
-		<version>1.0.17</version>
+		<artifactId>bcrm-pom</artifactId>
+		<version>1.1.4</version>
 		<relativePath/>
 	</parent>
 
 	<groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
-	<artifactId>common-btfacore</artifactId>
-	<version>1.0.21</version>
+	<artifactId>bcrm-core</artifactId>
+	<version>1.1.1</version>
 	<packaging>mule-application</packaging>
-	<name>common-btfacore</name>
+	<name>bcrm-core</name>
 	<description>Shared Mule library that provides reusable flows, resources and configuration settings common for all applications</description>
 
 	<properties>
