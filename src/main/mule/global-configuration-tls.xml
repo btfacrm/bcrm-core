@@ -16,7 +16,7 @@
 	<tls:context name="TLS_Context" 
 		doc:name="TLS Context"
 		doc:description="This connector is used to secure HTTP connectors with TLS 1.2 security and encryption. This is necessary for communications between mule apps and other services outside Anypoint but also is just another layer of security between the services hosted on Anypoint">
-		<tls:key-store type="pkcs12" 
+		<tls:key-store type="BCFKS" 
 			path="${jks.path}"
 			keyPassword="${jks.keypassword}"
 			password="${jks.keypassword}" 
