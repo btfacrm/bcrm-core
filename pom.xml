@@ -75,6 +75,11 @@
 			<artifactId>mssql-jdbc_auth</artifactId>
 			<type>dll</type>
 		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bc-fips</artifactId>
+			<version>2.1.1</version>
+		</dependency>
 
 	</dependencies>
 
