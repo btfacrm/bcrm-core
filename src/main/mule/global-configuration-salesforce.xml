@@ -21,17 +21,10 @@
 			principal="${salesforce.principal}" 
 			certificateAlias="${salesforce.certificatealias}" 
 			tokenEndpoint="${salesforce.tokenendpoint}" 
-			audienceUrl="${salesforce.audienceurl}">
+			audienceUrl="${salesforce.audienceurl}"
+			keyStore="${salesforce.keystore}"
+			storePassword="${salesforce.storepassword}">
 			
-			<!--keyStore="${salesforce.keystore}"
-			storePassword="${salesforce.storepassword}"-->
-			
-		<salesforce:key-store 
-            path="${salesforce.keystore}" 
-            password="${salesforce.storepassword}" 
-            type="BCFKS" 
-            algorithm="RS256" />
-
 			<reconnection >
 				<reconnect />
 			</reconnection>
