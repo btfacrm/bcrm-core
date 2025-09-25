@@ -18,15 +18,20 @@
 	<salesforce:sfdc-config name="GlobalSalesforceConfig" doc:name="Global Salesforce Config" >
 		<salesforce:jwt-connection
 			consumerKey="${salesforce.consumerkey}"
-			keyStore="${salesforce.keystore}"
-			storePassword="${salesforce.storepassword}"
 			principal="${salesforce.principal}" 
 			certificateAlias="${salesforce.certificatealias}" 
 			tokenEndpoint="${salesforce.tokenendpoint}" 
-			audienceUrl="${salesforce.audienceurl}"
-			jwt-key-store-type="BCFKS"
-    		jwt-key-algorithm="RS256">
->
+			audienceUrl="${salesforce.audienceurl}">
+			
+			<!--keyStore="${salesforce.keystore}"
+			storePassword="${salesforce.storepassword}"-->
+			
+		<salesforce:key-store 
+            path="${salesforce.keystore}" 
+            password="${salesforce.storepassword}" 
+            type="BCFKS" 
+            algorithm="RS256" />
+
 			<reconnection >
 				<reconnect />
 			</reconnection>
